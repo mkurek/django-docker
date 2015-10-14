@@ -18,10 +18,6 @@ WORKDIR $BLOG_DIR
 ADD docker/* $SCRIPTS_PATH/
 RUN $SCRIPTS_PATH/provision.sh
 
-# cleanup
-RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 # install Python requirements
 ADD requirements $BLOG_DIR/requirements
 RUN pip3 install -r requirements/production.txt
