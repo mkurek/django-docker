@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    server_name blog;
+
+    location /static {
+        alias /home/blog/static;
+    }
+
+    location / {
+        proxy_pass http://blog:8001;
+    }
+}
