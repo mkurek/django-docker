@@ -17,5 +17,13 @@
         },
         "model": "blog.category",
         "pk": 1
+    },
+    {
+        "fields": {
+            "slug": "octodocker",
+            "title": "Octodocker"
+        },
+        "model": "blog.category",
+        "pk": 2
     }
 ]
