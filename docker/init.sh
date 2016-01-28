@@ -7,5 +7,5 @@ python3 manage.py collectstatic --noinput
 
 # pass the error (ex. when user already exist);
 # by muting the error, this script could be use to upgrade data container too
-python3 manage.py createsuperuser --noinput --username admin || true
-python3 $BLOG_DIR/docker/createsuperuser.py
+python3 manage.py createsuperuser --noinput --username admin --email="octo@docker.com" || true
+python3 $BLOG_DIR/createsuperuser.py
